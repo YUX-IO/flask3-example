@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, abort, redirect, Response
+from flask import Flask, render_template, request, abort, redirect, Response, url_for
 import json
 import netease
 from werkzeug.contrib.cache import SimpleCache
