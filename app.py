@@ -1,4 +1,8 @@
-from flask import Flask
+from flask import Flask, render_template, request, abort, redirect, Response
+import netease
+import json
+from werkzeug.contrib.cache import SimpleCache
+cache = SimpleCache()
 app = Flask(__name__)
 
 @app.route("/")
